@@ -26,6 +26,8 @@ html {
     box-sizing:border-box;
     font-size:2rem;
     text-transform:capitalize;
+    z-index: 0;
+    position: relative;
     &__top {
         height: 3vh;
         display:flex;
@@ -45,7 +47,7 @@ html {
         margin-left: 25%;
     }
     &__top-3 {
-        margin-left: 37%;
+        margin-left: 35%;
         i {
             margin: 0 2px;
         }
@@ -99,6 +101,15 @@ html {
             top:40%;
         }
     }
+    .blocPanier {
+        position: absolute;
+        z-index: 1;
+        right:7%;
+        background-color: #fff;
+    }
+    .blocPdt {
+        display:flex;
+    }
 }
 
 .produits {
@@ -123,6 +134,16 @@ html {
     }
     &-2 {
         margin-left: 20px;
+    }
+}
+
+table {
+    th {
+        height: 50px;
+        background-color: orange;
+    }
+    td {
+        width: 180px;
     }
 }
 

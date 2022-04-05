@@ -25,6 +25,8 @@ html {
   box-sizing: border-box;
   font-size: 2rem;
   text-transform: capitalize;
+  z-index: 0;
+  position: relative;
 }
 #header__top {
   height: 3vh;
@@ -45,7 +47,7 @@ html {
   margin-left: 25%;
 }
 #header__top-3 {
-  margin-left: 37%;
+  margin-left: 35%;
 }
 #header__top-3 i {
   margin: 0 2px;
@@ -99,6 +101,15 @@ html {
   right: 1%;
   top: 40%;
 }
+#header .blocPanier {
+  position: absolute;
+  z-index: 1;
+  right: 7%;
+  background-color: #fff;
+}
+#header .blocPdt {
+  display: flex;
+}
 
 .produits {
   display: flex;
@@ -123,6 +134,14 @@ html {
 }
 .detail-2 {
   margin-left: 20px;
+}
+
+table th {
+  height: 50px;
+  background-color: orange;
+}
+table td {
+  width: 180px;
 }
 
 #footer {
